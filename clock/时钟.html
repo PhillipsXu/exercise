@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 100px auto;
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            cursor: default;
+        }
+
+        .box {
+            background-color: black;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            font-size: 100px;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px pink;
+            transition: all 1s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover {
+            animation: a .5s ease-in-out;
+        }
+
+        @keyframes a {
+            0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(-20px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            75% {
+                transform: translateY(5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        span {
+            z-index: 1;
+        }
+
+        .box::after {
+            content: '';
+            width: 150px;
+            height: 5px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 75px;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"><span></span></div>
+        <div class="box"><span></span></div>
+        <div class="box"><span></span></div>
+    </div>
+    <script>
+        var span = document.querySelectorAll('span');
+
+        // 时钟
+        function now() {
+            let time = new Date();
+            let h = time.getHours();
+            h = h < 10 ? '0' + h : h;
+            let m = time.getMinutes();
+            m = m < 10 ? '0' + m : m;
+            let s = time.getSeconds();
+            s = s < 10 ? '0' + s : s;
+            span[0].innerHTML = `${h}`;
+            span[1].innerHTML = `${m}`;
+            span[2].innerHTML = `${s}`;
+        }
+        now();
+        setInterval(now, 1000);
+
+
+        /*         // 倒计时
+                function countDown(time) {
+                    var nowTime = +new Date();
+                    var inputTime = +new Date(time);
+                    var leftTime = (inputTime - nowTime) / 1000;
+                    var d = parseInt(leftTime / 60 / 60 / 24);
+                    d = d < 10 ? '0' + d : d;
+                    var h = parseInt(leftTime / 60 / 60 % 24);
+                    h = h < 10 ? '0' + h : h;
+                    var m = parseInt(leftTime / 60 % 60);
+                    m = m < 10 ? '0' + m : m;
+                    var s = parseInt(leftTime % 60);
+                    s = s < 10 ? '0' + s : s;
+                    span[0].innerHTML = `${h}`;
+                    span[1].innerHTML = `${m}`;
+                    span[2].innerHTML = `${s}`;
+                    // return `${d}天${h}小时${m}分${s}秒`;
+                } */
+
+        /*  var time = 'Thu Aug 26 2022 16:33:56 GMT+0800';
+         countDown(time);
+         setInterval('countDown(time)', 1000); */
+
+        document.addEventListener('selectstart', function (e) {
+            e.preventDefault();
+        })
+    </script>
+</body>
+
+</html>
