@@ -14,8 +14,8 @@ class Food {
     }
 
     change() {
-        this.element.style.left = Math.round(Math.random() * 29) * 10 + 'px';
-        this.element.style.top = Math.round(Math.random() * 29) * 10 + 'px';
+        this.element.style.left = Math.round(Math.random() * 28) * 10 + 'px';
+        this.element.style.top = Math.round(Math.random() * 28) * 10 + 'px';
     }
 }
 

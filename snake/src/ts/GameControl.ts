@@ -8,12 +8,14 @@ class GameControl {
     snake: Snake;
     direction: string = '';
     isLive: boolean = true;
+    dis: HTMLElement;
 
     constructor() {
         this.food = new Food();
         this.scorepanel = new ScorePanel(10, 1);
         this.snake = new Snake();
         this.init();
+        this.dis = document.querySelector('#disruption')!;
     }
 
     init() {
@@ -23,6 +25,7 @@ class GameControl {
 
     startHandler(e: KeyboardEvent) {
         this.direction = e.key;
+        this.dis.innerText = '';
     }
 
     run() {
