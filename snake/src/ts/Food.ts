@@ -1,3 +1,5 @@
+import getPosition from './getPosition';
+
 class Food {
     element: HTMLElement;
 
@@ -13,9 +15,17 @@ class Food {
         return this.element.offsetTop;
     }
 
+    set X(val) {
+        this.element.style.left = val + 'px';
+    }
+
+    set Y(val) {
+        this.element.style.top = val + 'px';
+    }
+
     change() {
-        this.element.style.left = Math.round(Math.random() * 28) * 10 + 'px';
-        this.element.style.top = Math.round(Math.random() * 28) * 10 + 'px';
+        this.element.style.left = getPosition() + 'px';
+        this.element.style.top = getPosition() + 'px';
     }
 }
 

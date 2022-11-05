@@ -1,5 +1,9 @@
-@bgcolor: #b7d4a8;
-@black: #000;
+$bgcolor: #b7d4a8;
+$black: #000;
+
+@mixin bg-black {
+    background-color: $black;
+}
 
 * {
     margin: 0;
@@ -14,7 +18,7 @@ body {
 }
 
 #title {
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -26,35 +30,38 @@ body {
 #main {
     width: 360px;
     height: 420px;
-    background-color: @bgcolor;
-    margin: 50px auto;
-    border: 10px solid @black;
-    border-radius: 10px;
+    background-color: $bgcolor;
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
+    border: 10px solid $black {
+        radius: 10px;
+    }
+
     #stage {
         width: 300px;
         height: 300px;
-        border: 2px solid @black;
+        border: 2px solid $black;
         position: relative;
 
         #snake {
             &>div {
                 width: 10px;
                 height: 10px;
-                background-color: @black;
-                border: 1px solid @bgcolor;
+                @include bg-black();
                 position: absolute;
+                border: 1px solid $bgcolor{
+                    radius: 25%;
+                }
+                transform: rotate(45deg);
             }
         }
 
         #food {
             position: absolute;
-            left: 40px;
-            top: 100px;
             display: flex;
             flex-wrap: wrap;
             width: 10px;
@@ -63,8 +70,8 @@ body {
             &>div {
                 width: 4px;
                 height: 4px;
-                background-color: @black;
-                border: .1px solid @bgcolor;
+                @include bg-black();
+                border: .1px solid $bgcolor;
                 border-radius: 2px;
                 transform: rotate(45deg);
             }

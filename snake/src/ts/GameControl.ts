@@ -1,6 +1,7 @@
 import Food from './Food';
 import ScorePanel from './ScorePanel';
 import Snake from './Snake';
+import getPosition from './getPosition';
 
 class GameControl {
     food: Food;
@@ -12,14 +13,18 @@ class GameControl {
 
     constructor() {
         this.food = new Food();
-        this.scorepanel = new ScorePanel(10, 1);
+        this.scorepanel = new ScorePanel(10, 2);
         this.snake = new Snake();
-        this.init();
         this.dis = document.querySelector('#disruption')!;
+        this.init();
     }
 
     init() {
         document.addEventListener('keydown', this.startHandler.bind(this));
+        this.snake.X = getPosition();
+        this.snake.Y = getPosition();
+        this.food.X = getPosition();
+        this.food.Y = getPosition();
         this.run();
     }
 
@@ -60,15 +65,19 @@ class GameControl {
 
         this.checkFood();
 
-        this.isLive && setTimeout(this.run.bind(this), 30 * (this.scorepanel.maxLevel + 1 - this.scorepanel.level));
+        if (this.scorepanel.level === this.scorepanel.maxLevel) {
+            throw alert('YOU ARE WIN! 请刷新页面...');
+        }
+
+        this.isLive && setTimeout(this.run.bind(this), 15 * (this.scorepanel.maxLevel + 1 - this.scorepanel.level) + 100);
     }
 
     checkFood() {
         if (this.snake.X === this.food.X && this.snake.Y === this.food.Y) {
             console.log('GET FOOD!');
+            this.snake.addBody();
             this.food.change();
             this.scorepanel.addScore();
-            this.snake.addBody();
         }
     }
 }

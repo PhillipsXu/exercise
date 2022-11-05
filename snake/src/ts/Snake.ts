@@ -46,7 +46,7 @@ class Snake {
         this.head.style.top = val + 'px';
         this.checkHead();
         if (val < 0 || val > 290) {
-            throw ('YOU ARE DEAD!')
+            throw ('YOU ARE DEAD! 请刷新页面...')
         }
     }
 
@@ -69,7 +69,7 @@ class Snake {
         for (let i = 1; i < this.bodies.length - 1; i++) {
             let body = (<HTMLElement>this.bodies[i])
             if (this.X === body.offsetLeft && this.Y === body.offsetTop) {
-                throw ('GAME OVER!')
+                throw ('GAME OVER! 请刷新页面...')
             }
         }
     }
