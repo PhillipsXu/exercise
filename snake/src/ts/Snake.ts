@@ -73,6 +73,27 @@ class Snake {
             }
         }
     }
+
+    changeHead(direction: string) {
+        switch (direction) {
+            case 'ArrowUp':
+            case 'Up':
+                this.head.style.transform = 'rotate(-90deg)';
+                break;
+            case 'ArrowDown':
+            case 'Down':
+                this.head.style.transform = 'rotate(90deg)';
+                break;
+            case 'ArrowLeft':
+            case 'Left':
+                this.head.style.transform = 'rotate(180deg)';
+                break;
+            case 'ArrowRight':
+            case 'Right':
+                this.head.style.transform = 'rotate(0)';
+                break;
+        }
+    }
 }
 
 export default Snake;

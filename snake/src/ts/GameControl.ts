@@ -40,18 +40,22 @@ class GameControl {
             case 'ArrowUp':
             case 'Up':
                 y -= 10;
+                this.snake.changeHead(this.direction);
                 break;
             case 'ArrowDown':
             case 'Down':
                 y += 10;
+                this.snake.changeHead(this.direction);
                 break;
             case 'ArrowLeft':
             case 'Left':
                 x -= 10;
+                this.snake.changeHead(this.direction);
                 break;
             case 'ArrowRight':
             case 'Right':
                 x += 10;
+                this.snake.changeHead(this.direction);
                 break;
         }
 

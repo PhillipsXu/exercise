@@ -53,10 +53,18 @@ body {
                 height: 10px;
                 @include bg-black();
                 position: absolute;
-                border: 1px solid $bgcolor{
+                border: 1px solid $bgcolor {
                     radius: 25%;
                 }
-                transform: rotate(45deg);
+
+                &:first-child {
+                    border-bottom-right-radius: 50%;
+                    border-top-right-radius: 50%;
+                }
+
+                &:not(:first-child) {
+                    transform: rotate(45deg);
+                }
             }
         }
 
