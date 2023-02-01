@@ -1,0 +1,30 @@
+.Compute {
+    margin-left: 10px;
+
+    select {
+        width: auto;
+        height: 32px;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        background-color: #ffffff;
+        border-color: #d9d9d9;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+        font-size: 14px;
+        padding: 4px 15px;
+        border-radius: 6px;
+        outline: none;
+        display: inline-block;
+        font-weight: 400;
+        white-space: nowrap;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        overflow: visible;
+        vertical-align: bottom;
+        text-align: justify;
+    }
+
+    button {
+        margin-left: 10px;
+    }
+}
