@@ -2,6 +2,8 @@
 
 ## vue
 
+## uniapp
+
 ## vite
 
 ## webpack
