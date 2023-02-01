@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+view .line.data-v-15ff4ba4 {
+  border-bottom: 2px dashed #c00000;
+}
+view .address-border.data-v-15ff4ba4 {
+  display: block;
+  width: 100%;
+  height: 5px;
+}
+view .address-choose-box.data-v-15ff4ba4 {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+view .address-info-box.data-v-15ff4ba4 {
+  font-size: 12px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+}
+view .address-info-box .row1.data-v-15ff4ba4 {
+  display: flex;
+  justify-content: space-between;
+}
+view .address-info-box .row1 .row1-right.data-v-15ff4ba4 {
+  display: flex;
+  align-items: center;
+}
+view .address-info-box .row1 .row1-right .phone.data-v-15ff4ba4 {
+  margin-right: 5px;
+}
+view .address-info-box .row2.data-v-15ff4ba4 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+view .address-info-box .row2 .row2-left.data-v-15ff4ba4 {
+  white-space: nowrap;
+}
+

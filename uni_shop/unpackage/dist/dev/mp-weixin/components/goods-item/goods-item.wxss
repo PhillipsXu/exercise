@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.goods-item {
+  display: flex;
+  padding: 10px 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.goods-item .goods-item-left {
+  margin-right: 5px;
+}
+.goods-item .goods-item-left .goods-pic {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.goods-item .goods-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.goods-item .goods-item-right .goods-name {
+  font-size: 13px;
+}
+.goods-item .goods-item-right .goods-price {
+  font-size: 16px;
+  color: #c00000;
+}
+.goods-item .goods-item-right .num-box {
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+}
+.goods-item .goods-item-right .num-box view {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.goods-item .goods-item-right .num-box .number {
+  background-color: #ebebeb;
+  width: 40px;
+  border-radius: 5px;
+}
+.goods-item .goods-item-right .num-box .decrease,
+.goods-item .goods-item-right .num-box .increase {
+  font-weight: 600;
+}
+.goods-item .goods-item-right radio {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.search.data-v-eb1fb978 {
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.search .search-box.data-v-eb1fb978 {
+  height: 36px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .search-box .text.data-v-eb1fb978 {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
