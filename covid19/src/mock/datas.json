@@ -1,0 +1,51 @@
+[
+    {
+        "date": "2022-11-2",
+        "confirmedIncr": 12554,
+        "seriousIncr": 6181,
+        "curedIncr": 269,
+        "deadIncr": 39
+    },
+    {
+        "date": "2022-11-3",
+        "confirmedIncr": 6789,
+        "seriousIncr": 10488,
+        "curedIncr": 415,
+        "deadIncr": 46
+    },
+    {
+        "date": "2022-11-4",
+        "confirmedIncr": 5782,
+        "seriousIncr": 9328,
+        "curedIncr": 394,
+        "deadIncr": 150
+    },
+    {
+        "date": "2022-11-5",
+        "confirmedIncr": 22047,
+        "seriousIncr": 19148,
+        "curedIncr": 356,
+        "deadIncr": 99
+    },
+    {
+        "date": "2022-11-6",
+        "confirmedIncr": 19346,
+        "seriousIncr": 17210,
+        "curedIncr": 401,
+        "deadIncr": 95
+    },
+    {
+        "date": "2022-11-7",
+        "confirmedIncr": 23786,
+        "seriousIncr": 15941,
+        "curedIncr": 269,
+        "deadIncr": 333
+    },
+    {
+        "date": "2022-11-8",
+        "confirmedIncr": 12822,
+        "seriousIncr": 9013,
+        "curedIncr": 269,
+        "deadIncr": 299
+    }
+]

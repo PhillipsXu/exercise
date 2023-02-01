@@ -1,0 +1,82 @@
+[
+    {
+        "id": "001",
+        "area": "China",
+        "createTime": 1579537899000,
+        "modifyTime": 1667870470000,
+        "currentConfirmedCount": 8220164,
+        "confirmedCount": 8609153,
+        "suspectedCount": 26152,
+        "curedCount": 360050,
+        "deadCount": 28939,
+        "seriousCount": 39861,
+        "suspectedIncr": 47,
+        "currentConfirmedIncr": 843,
+        "confirmedIncr": 18070,
+        "curedIncr": 378,
+        "deadIncr": 39,
+        "seriousIncr": 6632,
+        "yesterdayConfirmedCountIncr": 1515,
+        "yesterdaySuspectedCountIncr": 10,
+        "news": [
+            {
+                "id": 213540,
+                "pubDate": 1667869021000,
+                "pubDateStr": "18分钟前",
+                "title": "国家卫健委|昨日新增本土843+6632例",
+                "summary": "11月7日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例890例。其中境外输入病例47例（福建12例，广东12例，四川8例，北京5例，天津3例，上海3例，辽宁2例，江苏1例，山东1例），含2例由无症状感染者转为确诊病例（广东1例，四川1例）；本土病例843例（广东319例，内蒙古159例，重庆89例，河南86例，山西33例，新疆32例，北京31例，四川21例，湖南16例，",
+                "infoSource": "央视新闻app",
+                "sourceUrl": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=7232672879103401229&toc_style_id=feeds_default"
+            },
+            {
+                "id": 213536,
+                "pubDate": 1667868179000,
+                "pubDateStr": "32分钟前",
+                "title": "广东|昨日新增本土确诊病例319例",
+                "summary": "11月7日0—24时，广东省新增本土确诊病例198例（广州114例，深圳1例，汕头25例，佛山2例，茂名44例，清远11例，潮州1例）；新增本土无症状感染者2330例（广州2263例，汕头30例，佛山3例，梅州4例，东莞4例，江门1例，湛江1例，茂名16例，清远5例，揭阳3例）；另有121例本土无症状转确诊病例（广州118例，珠海1例，茂名1例，清远1例）。广东省新增境外输入确诊病例11例（深圳1",
+                "infoSource": "央视新闻app",
+                "sourceUrl": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=2601225962059629439&toc_style_id=feeds_default"
+            },
+            {
+                "id": 213539,
+                "pubDate": 1667868600000,
+                "pubDateStr": "25分钟前",
+                "title": "河南|昨日新增本土确诊病例86例",
+                "summary": "记者从河南省卫健委了解到，11月7日0到24时，河南省新增本土确诊病例86例（郑州市86例，其中61例为隔离管控发现、15例为重点人群筛查发现、7例为主动就诊发现，3例为社区筛查发现）。新增本土无症状感染者661例（郑州647例，其中590例为隔离管控发现、39例为重点人群筛查发现、2例为主动就诊发现、16例为社区筛查发现；鹤壁市4例、许昌市2例、焦作市1例、信阳市1例，均为隔离管控发现；省外返豫",
+                "infoSource": "央视新闻app",
+                "sourceUrl": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=17150802675127794648&toc_style_id=feeds_default"
+            },
+            {
+                "id": 213535,
+                "pubDate": 1667868586000,
+                "pubDateStr": "25分钟前",
+                "title": "山西|昨日新增本土确诊病例33例",
+                "summary": "2022年11月7日0-24时，山西省新增本土新冠肺炎确诊病例33例（大同市平城区17例、大同市云冈区12例、忻州市繁峙县2例、吕梁市离石区无症状感染者转为确诊病例1例、吕梁市孝义市1例）。当日治愈出院9例（大同市平城区2例、朔州市朔城区1例、朔州市应县1例、晋中市榆次区1例、运城市盐湖区1例、临汾市尧都区1例、吕梁市交城县2例）。累计报告确诊病例1426例，治愈出院759例，现有在院隔离治疗66",
+                "infoSource": "央视新闻app",
+                "sourceUrl": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=18297334716973184150&toc_style_id=feeds_default"
+            },
+            {
+                "id": 213534,
+                "pubDate": 1667867314000,
+                "pubDateStr": "46分钟前",
+                "title": "新疆|昨日新增本土确诊病例32例",
+                "summary": "11月7日0时至24时，新疆维吾尔自治区新增本土确诊病例32例，新增无症状感染者623例，新增确诊病例治愈出院2例，新增无症状感染者解除隔离医学观察139例。\n（总台记者卜鹏崔宁李航）",
+                "infoSource": "央视新闻app",
+                "sourceUrl": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=15194107362952039498&toc_style_id=feeds_default"
+            }
+        ]
+    },
+    {
+        "id": "002",
+        "area": "foreign",
+        "createTime": 1579537899000,
+        "modifyTime": 1667870430000,
+        "currentConfirmedCount": 12866569,
+        "confirmedCount": 627760719,
+        "curedCount": 608316840,
+        "curedPercent": "91.2%",
+        "deadCount": 6577310,
+        "confirmedIncr": 121624,
+        "deadIncr": 519
+    }
+]
