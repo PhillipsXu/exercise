@@ -1,0 +1,35 @@
+.item {
+    box-sizing: border-box;
+    border: .5px solid #ccc;
+    width: 375px;
+    height: 38px;
+    line-height: 38px;
+    border: 0.5px solid #ccc;
+    border-bottom: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+
+    &:last-child {
+        border-bottom: 0.5px solid #ccc;
+    }
+
+    span {
+        padding-left: 15px;
+    }
+
+    button {
+        float: right;
+        position: relative;
+        right: 5px;
+        top: 3px;
+        display: none;
+        width: 50px;
+        height: 30px;
+        border: .5px solid #fc2600;
+        background-color: #fc2600;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,29 @@
+.bottom {
+    width: 400px;
+    border: 1px solid #000;
+    border-top: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 22px;
+
+    span {
+        padding-left: 15px;
+    }
+
+    button {
+        float: right;
+        position: relative;
+        top: 5px;
+        right: 12px;
+        height: 30px;
+        border: .5px solid #fc2600;
+        background-color: #fc2600;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

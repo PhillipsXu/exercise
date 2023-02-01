@@ -1,0 +1,15 @@
+.middle {
+    width: 400px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
